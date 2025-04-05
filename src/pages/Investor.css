@@ -1,0 +1,436 @@
+.investor-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.investor-header-section {
+  background-color: #f5f7f9;
+  padding: 20px;
+  width: 100%;
+}
+
+.filter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 10px;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-option {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.filter-option:hover, .filter-option.active {
+  background-color: #0099cc;
+  color: white;
+}
+
+.investor-content {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* Investor Grid Section */
+.investor-grid-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #0099cc;
+}
+
+.investor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.investor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.investor-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+.investor-1 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor1');
+}
+
+.investor-2 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor2');
+}
+
+.investor-3 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor3');
+}
+
+.investor-4 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor4');
+}
+
+.investor-5 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor5');
+}
+
+.investor-6 {
+  background-image: url('https://via.placeholder.com/300x300?text=Investor6');
+}
+
+.investor-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.investor-position {
+  color: #0099cc;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #0099cc;
+  color: white;
+}
+
+/* Join our Club Section */
+.join-club-section {
+  background-color: #293846;
+  background-image: url('https://via.placeholder.com/1200x300?text=Graph+Background');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  margin: 40px 0;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.join-club-content {
+  max-width: 500px;
+  color: white;
+}
+
+.join-club-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.join-club-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.register-btn {
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #007baa;
+}
+
+/* Key Partners Section */
+.key-partners-section {
+  padding: 80px 0;
+  background-color: #212121;
+  margin-top: 0;
+}
+
+.key-partners-section .section-title {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px 20px;
+}
+
+.partner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%) brightness(150%);
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%) brightness(100%);
+}
+
+/* Investor Matching Section */
+.investor-matching-section {
+  background-color: #f5f7f9;
+  padding: 70px 0;
+}
+
+.strategic-label {
+  color: #0099cc;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.matching-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 30px;
+}
+
+.matching-main {
+  padding-right: 30px;
+}
+
+.matching-main h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.matching-main p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.view-all-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid #0099cc;
+  border-radius: 4px;
+  color: #0099cc;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #0099cc;
+  color: white;
+}
+
+.matching-feature {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+}
+
+.feature-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.matching-feature h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.matching-feature p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.learn-more {
+  color: #0099cc;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.learn-more:hover {
+  color: #007baa;
+}
+
+.learn-more i {
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-option {
+    width: 100%;
+  }
+  
+  .investor-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .join-club-section {
+    padding: 40px 20px;
+  }
+  
+  .join-club-content {
+    max-width: 100%;
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .matching-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .matching-main {
+    padding-right: 0;
+  }
+  
+  .matching-main h2 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .filter-options {
+    justify-content: flex-start;
+  }
+  
+  .filter-option {
+    min-width: auto;
+  }
+  
+  .investor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .matching-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .matching-feature {
+    margin-top: 20px;
+  }
+}

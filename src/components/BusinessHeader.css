@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #2a3d45;
+  margin-bottom: 20px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strategic-planning {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #4ecdc4;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-content {
+  padding: 60px 20px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.2;
+}
+
+.submit-button {
+  background-color: #05c2dc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #04a6bd;
+}

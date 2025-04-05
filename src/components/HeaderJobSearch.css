@@ -1,0 +1,131 @@
+.header-job-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.search-toggle-button:hover {
+  background-color: #eaeaea;
+  color: #05c2dc;
+}
+
+.search-toggle-button svg {
+  color: #666;
+}
+
+.header-job-search.expanded {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+  animation: expandSearch 0.3s ease;
+}
+
+@keyframes expandSearch {
+  from {
+    width: 140px;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 16px;
+  outline: none;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-submit, .search-close {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-submit {
+  color: #05c2dc;
+}
+
+.search-submit:hover {
+  color: #048ca7;
+}
+
+.search-close {
+  color: #999;
+}
+
+.search-close:hover {
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  .header-job-search.expanded {
+    max-width: 100%;
+    order: 4;
+    margin-top: 10px;
+  }
+  
+  .search-toggle-button span {
+    display: none;
+  }
+  
+  .search-toggle-button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-job-search {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .search-toggle-button span {
+    display: inline;
+  }
+  
+  .search-toggle-button {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+}

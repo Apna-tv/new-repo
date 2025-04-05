@@ -1,0 +1,23 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.models-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .models-container {
+    flex-direction: column;
+  }
+}
